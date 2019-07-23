@@ -7,7 +7,7 @@ const { rescueAnimals } = require('./rescueAnimals');
 const { donations } = require('./donations')
 
 app.locals = { 
-  title: 'Animal Rescue', 
+  title: 'Animal Rescue API', 
   rescueAnimals, 
   donations 
 };
