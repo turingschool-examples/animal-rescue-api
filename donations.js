@@ -3,12 +3,12 @@ module.exports = {
     {
       id: 1,
       name: 'Travis Rollins',
-      donation: 200,
+      donation: 200
     },
     {
       id: 2,
       name: 'Leta Keane',
-      donation: 400,
+      donation: 400
     }
   ]
 }
