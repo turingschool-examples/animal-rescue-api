@@ -30,7 +30,7 @@ app.get('/api/v1/donations', (req, res) => {
 app.post('/api/v1/donations', (req, res) => {
   const newDonation = req.body;
 
-  for (let requiredParameter of ['id', 'name', 'donation', 'animal_id']) {
+  for (let requiredParameter of ['id', 'name', 'donation']) {
     if (!newDonation[requiredParameter]) {
       return res.status(422).json({
         message: `You are missing a required parameter of ${requiredParameter}`
@@ -38,22 +38,14 @@ app.post('/api/v1/donations', (req, res) => {
     }
   }
 
-  const { id, name, donation, animal_id } = newDonation;
-
-  const match = app.locals.rescueAnimals.find(animal => animal.id == animal_id);
-
-  if(!match) {
-    return res.status(404).json({
-      message: `No animal found with an id of ${animal_id}`
-    });
-  }
+  const { id, name, donation, } = newDonation;
 
   app.locals.donations = [
     ...app.locals.donations, 
-  { id, name, donation, animal_id}
+  { id, name, donation }
   ];
 
-  return res.status(201).json(app.locals.donations);
+  return res.status(201).json({ id, name, donation });
 });
 
 app.listen(port, () => {
