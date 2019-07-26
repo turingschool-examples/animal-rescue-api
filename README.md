@@ -1,7 +1,5 @@
 ## Animal Rescue
 
-In a new directory, create a brand new frontend for this project using `create-react-app` and clone down (and use) this api to build the following:
-
 ### Set Up
 
 Clone down this repo, install the dependencies, and start the server.  It should be running on `localhost:3001`
@@ -20,7 +18,7 @@ We do want to see good commit habits - atomic commits that log small, focused ch
 
 ### Iteration 0
 
-First thing we want to do is fetch some info for us to display. **Thunks are not required**
+First thing we want to do is fetch some info for us to display. **Thunks are not required.**
 You are going to want to grab all of the rescued animal data and populate a Redux store. You should also have `isLoading` and `hasErrored` properties in your store.
 
 ### Iteration 1
@@ -32,11 +30,14 @@ Things to display:
 
 ### Iteration 2
 
-Next we want to do is fetch all of the donation data and populate that in the redux store as well. Your `isLoading` and `hasErrored` properties should also be resused for this functionality.
+Next we want to fetch all of the donation data, populate that in the redux store, and display the data as a list as well. Your `isLoading` and `hasErrored` properties should also be resused for this functionality.
+
+Things to display:
+`name, donation`
 
 ### Iteration 3
 
-Create a controlled form component to create a donation (look into the API documentation to see what pieces of information are expected, and what datatypes it wants each piece to be). As a user types into the input fields, the component's state should change.
+Create a controlled form component to create a donation (look into the API documentation below to see what pieces of information are expected, and what datatypes it wants each piece to be). As a user types into the input fields, the component's state should change.
 
 When the user clicks the `Donate!` button, the application should update the store.  The new donation should display with all of the existing donations.
 
