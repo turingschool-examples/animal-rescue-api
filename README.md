@@ -30,7 +30,7 @@ Things to display:
 
 ### Iteration 2
 
-Next we want to fetch all of the donation data, populate that in the redux store, and display the data as a list as well. Your `isLoading` and `hasErrored` properties should also be resused for this functionality.
+Next we want to fetch all of the donation data, populate that in the redux store, and display the data as a list as well. Your `isLoading` and `hasErrored` properties should also be reused for this functionality.
 
 Things to display:
 `name, donation`
