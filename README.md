@@ -45,11 +45,19 @@ When the user clicks the `Donate!` button, the application should update the sto
 
 When the user makes a donation, the application should make a post request to the API.  The new donation should still exist upon reloading the page.
 
-**You may not have any fetch calls in any component other than App!**
+### Iteration 5 - Testing
 
-(If you have time to refactor your fetch calls into a separate helper file, that is fine, but it is *NOT* a requirement for this application.)
+Your app does not need to be fully tested, but you should demostrate knowledge of how to test all of the parts of your application. You should have at least one test for each of the following:
 
-### Endpoints
+* Api calls
+* An update to state component (maybe in a form component)
+* Component snapshot
+* Action creator
+* Reducer
+* mapStateToProps
+* mapDispatchToProps
+
+### API Endpoints
 
 | url | verb | options | sample response |
 | ----|------|---------|---------------- |
