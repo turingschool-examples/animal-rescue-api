@@ -18,8 +18,7 @@ We do want to see good commit habits - atomic commits that log small, focused ch
 
 ### Iteration 0
 
-First thing we want to do is fetch some info for us to display. **Thunks are not required.**
-You are going to want to grab all of the rescued animal data and populate a Redux store. You should also have `isLoading` and `hasErrored` properties in your store.
+First thing we want to do is fetch some info for us to display.  You are going to want to grab all of the rescued animal data and populate a Redux store. You should also have `isLoading` and `hasErrored` properties in your store.
 
 ### Iteration 1
 
