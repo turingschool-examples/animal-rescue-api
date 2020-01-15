@@ -44,7 +44,7 @@ When the user clicks the `Donate!` button, the application should update the sto
 
 When the user makes a donation, the application should make a post request to the API.  The new donation should still exist upon reloading the page.
 
-### Iteration 5 - Testing
+<!-- ### Iteration 5 - Testing
 
 Your app does not need to be fully tested, but you should demostrate knowledge of how to test all of the parts of your application. You should have at least one test for each of the following:
 
@@ -55,6 +55,7 @@ Your app does not need to be fully tested, but you should demostrate knowledge o
 * Reducer
 * mapStateToProps
 * mapDispatchToProps
+-->
 
 ### API Endpoints
 
